@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Password Validation </title>
+    </head>
+
+    <body>
+        Password Validation
+        <div class="container">
+          <br>
+           <label for="password">Please enter a password: </label>
+           <input type="password" id="password" name="password" minlength="8"><br><br>
+           <label for="validate">Please repeat your password for validation: </label>
+           <input type="password" id="validate" name="validate" minlength="8"><br><br>
+
+             <script type="text/javascript" src="functions.js"></script>
+             <button onclick="validate()">Validate passwords</button>
+
+        </div>
+
+
+
+        <style>
+          input {
+           width: 100%;
+           padding: 12px;
+           border: 1px solid #bbb;
+           border-radius: 15px;
+           box-sizing: border-box;
+           margin-top: 5px;
+           margin-bottom: 15px;
+         }
+
+         input[type=submit] {
+           background-color: #04AA7B;
+           color: white;
+         }
+
+         .container {
+           background-color: #f2f3f5;
+           padding: 22px;
+         }
+
+        </style>
+
+    </body>
+</html>
+
+<!-- • Two password fields
+o first to enter the password and a second to verify it
+• A button labelled "Validate" that alerts one of the following messages:
+o Display informative error message if any of the following occur:
+ the passwords entered don't match
+ the passwords are not at least 8 characters long -->

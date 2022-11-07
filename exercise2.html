@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Slide Show </title>
+    </head>
+
+    <body>
+        Slide Show
+
+        <img class="slides" id="1912" src="https://cdn.shopify.com/s/files/1/0589/4041/t/17/assets/Jayhawk-logo-1912-dates.png?v=157588252877906456841605622886">
+        <img class="slides" id="1920" src="https://kansas-jayhawk-high-school-indoor-open.runnerspace.com/members/images/73/87536_full.jpg">
+        <img class="slides" id="1923" src="https://i.pinimg.com/200x/be/6b/7d/be6b7d8432b7b8eb950438b6baba39bc.jpg">
+        <img class="slides" id="1929" src="https://1000logos.net/wp-content/uploads/2019/10/Kansas-Jayhawks-Logo-1929.jpg">
+        <img class="slides" id="1941" src="https://i.pinimg.com/originals/25/ec/7c/25ec7c53f37f65532de3cf26d43a94b4.jpg">
+        <img class="slides" id="1926" src="https://content.sportslogos.net/logos/32/718/full/4973_kansas_jayhawks-secondary-1946.png">
+        <img class="slides" id="2006" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30ZSnzr7HkG0_OGMVT0mzx6wElZtLJItlxtmYbeOmjFDIoL7b7onZVdVQ8GtuBJqcF6o&usqp=CAU">
+
+        <div class="slideLeft" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="slideRight" onclick="plusDivs(1)">&#10095;</div>
+
+        <script type="text/javascript" src="functions.js"></script>
+
+        <style>
+          img {
+    float: left;
+    width:  500px;
+    height: 500px;
+    <!-- object-fit: cover; -->
+}
+        </style>
+
+    </body>
+</html>
+
+<!-- Create a new webpage that has a single img tag and two buttons labeled “previous” and “next”.
+Your slideshow should:
+• contain at least five pictures of your choice (appropriate for class)
+• cycle through all the pictures
+• wrap around to the beginning if I keep pushing next
+• wrap around to the end if I keep pushing previous
+• force the images to be all the same size regardless of the original image files' dimensions  -->

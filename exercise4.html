@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS Manipulation </title>
+    </head>
+
+    <body>
+        CSS Manipulation
+        <div class="container">
+
+        </div>
+
+
+        <p id="paragraph" class="inset">
+          Far above the golden valley
+          Glorious to view.
+          Stands our noble Alma Mater
+          Towering toward the blue.
+          <br>
+          Lift the chorus ever onward,
+          Crimson and the blue.
+          Hail to thee our alma Mater,
+          Hail to old K. U.
+          <br>
+          Far above the distant humming
+          Of the busy town.
+          Reared against the dome of heaven,
+          Looks she proudly down.
+          <br>
+          Lift the chorus ever onward,
+          Crimson and the blue.
+          Hail to thee our alma Mater,
+          Hail to old K. U.
+          <br>
+          Greet we then our foster mother,
+          Noble friend so true,
+          We will ever sing her praises,
+          Hail to old K. U.
+          <br>
+          Lift the chorus ever onward,
+          Crimson and the blue.
+          Hail to thee our alma Mater,
+          Hail to old K. U.
+        </p>
+
+        <button type="button" onclick="document.getElementById('paragraph').style.borderColor = 'red'">Change border color to red</button>
+        <button type="button" onclick="document.getElementById('paragraph').style.borderColor = 'blue'">Change border color to blue</button>
+        <button type="button" onclick="document.getElementById('paragraph').style.borderColor = 'green'">Change border color to green</button>
+
+        <p>Border Color: </p>
+        <input type="color" id="borderColor">
+        <p>Border Width(thin/medium/thick): </p>
+        <input type="text" id=borderWidth>
+        <p>Background Color: </p>
+        <input type="color" id="backgroundColor">
+
+        <!-- <input type="text" id="border"> -->
+        <!-- <p>Red value</p>
+        <input type="color" id="redBorder">
+
+        <p>Blue value</p>
+        <input type="color" id="blueBorder">
+
+        <p>Green value</p>
+        <input type="color" id="greenBorder"> -->
+
+
+        <script type="text/javascript" src="functions.js"></script>
+        <br><br><br>
+        <button onclick="setHex()">Change CSS</button>
+
+        <style>
+          p.inset {border-style: inset;}
+
+
+        </style>
+
+    </body>
+</html>
+
+
+<!-- Create a web page that have a paragraph with some dummy text. Near the paragraph have text
+fields to accept the following values:
+• Border:
+o red value
+o green value
+o blue value
+o width
+• Background color:
+o red value
+o green value
+o blue value
+Finally, have a button that, when clicked, changes the border and background color to be as
+specified. You can use either the rgb() method or a color code, but you should tell the user what
+units they are in (00-FF or 0-255).
+//in JavaScript
+
+//Access the tag:
+var someTag = docuement.getElementById("theTagsId");
+
+//Change the style attribute
+someTag.style.backgroundColor = "red";
+NOTE: the names of the style attributes in CSS are all hyphenated (e.g. background-color) but in
+JavaScript they are nearly all converted to camel-case. Here is a reference of the style properties
+that JavaScript can access and change.  -->
